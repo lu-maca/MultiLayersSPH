@@ -1,0 +1,27 @@
+&probl_domain
+testcase = 3
+beta = 0.3
+length = 10.
+boundary = .false.
+nlayer = 1
+tfin = 5
+/
+
+&SPH
+numpar = 100
+ninterp = 100
+dt = 0.01
+art_visc_coeff = 0.5
+SLupd = .true.
+/
+
+&physics
+patm = 0.
+rho = 1000
+nu = 0.01
+turbulence = .false.
+/
+
+&results
+res_freq = 20
+/
