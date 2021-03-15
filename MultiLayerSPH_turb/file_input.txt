@@ -1,0 +1,26 @@
+&probl_domain
+testcase = 1
+beta = 0.4185
+length = 7.31
+boundary = .true.
+nlayer = 20
+tfin = 3.5
+/
+
+&SPH
+numpar = 100
+ninterp = 100
+dt = 0.01
+art_visc_coeff = 0.5
+SLupd = .true.
+/
+
+&physics
+patm = 0.
+rho = 1000.
+nu = 0.000001
+/
+
+&results
+res_freq = 5
+/
